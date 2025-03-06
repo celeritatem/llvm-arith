@@ -15,6 +15,9 @@ include_directories(SYSTEM ${LLVM_INCLUDE_DIRS})
 # map LLVM components to library names
 llvm_map_components_to_libnames(llvm_libs Core)
 
+# set output directory
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
 # add project
 include_directories(include/)
 include_directories(src/)
